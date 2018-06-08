@@ -1,0 +1,140 @@
+/* line 2, ../sass/styles.scss */
+.carousel-wrapper {
+  position: relative;
+  top: 50px;
+  height: 400px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+/* line 10, ../sass/styles.scss */
+.carousel-wrapper .carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  /* Let's use using some media queries to resize the arrows
+  on smaller devices.*/
+}
+/* line 21, ../sass/styles.scss */
+.carousel-wrapper .carousel-item .arrow {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 50px;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background: url("../images/left-arrow.png") 50% 50%/50px no-repeat;
+  /* Icon made by Smashicons from www.flaticon.com  */
+}
+/* line 31, ../sass/styles.scss */
+.carousel-wrapper .carousel-item .arrow.arrow-prev {
+  left: 10px;
+}
+/* line 35, ../sass/styles.scss */
+.carousel-wrapper .carousel-item .arrow.arrow-next {
+  right: 10px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+@media (max-width: 480px) {
+  /* line 47, ../sass/styles.scss */
+  .carousel-wrapper .carousel-item .arrow, .carousel-wrapper .carousel-item.light .arrow {
+    background-size: 75%;
+    background-position: 10px 50%;
+  }
+}
+/* line 54, ../sass/styles.scss */
+.carousel-wrapper [id^="target-item"] {
+  display: none;
+}
+/* line 58, ../sass/styles.scss */
+.carousel-wrapper .item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url("../images/1.jpg") repeat-x scroll 100%;
+}
+/* line 64, ../sass/styles.scss */
+.carousel-wrapper .item-2 {
+  background: url("../images/2.jpg") repeat-x scroll 100%;
+}
+/* line 65, ../sass/styles.scss */
+.carousel-wrapper .item-3 {
+  background: url("../images/3.jpg") repeat-x scroll 100%;
+}
+/* line 66, ../sass/styles.scss */
+.carousel-wrapper .item-4 {
+  background: url("../images/4.jpg") repeat-x scroll 100%;
+}
+/* line 67, ../sass/styles.scss */
+.carousel-wrapper .item-5 {
+  background: url("../images/5.jpg") repeat-x scroll 100%;
+}
+/* line 71, ../sass/styles.scss */
+.carousel-wrapper .eventtxt {
+  color: #006494;
+  font-size
+  position: fixed;
+  top: 12.5%;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity:1;
+  width: 400px;
+  border: 2px #e8f1f2 solid;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.carousel-wrapper .event h2
+{
+	opacity: 1;
+}
+/* line 72, ../sass/styles.scss */
+.carousel-wrapper button {
+	
+}
+/* line 75, ../sass/styles.scss */
+.carousel-wrapper *:target ~ .item-1 {
+  opacity: 0;
+}
+/* line 79, ../sass/styles.scss */
+.carousel-wrapper #target-item-1:target ~ .item-1 {
+  opacity: 1;
+}
+/* line 84, ../sass/styles.scss */
+.carousel-wrapper #target-item-2:target ~ .item-2, .carousel-wrapper #target-item-3:target ~ .item-3, .carousel-wrapper #target-item-4:target ~ .item-4, .carousel-wrapper #target-item-5:target ~ .item-5 {
+  z-index: 3;
+  opacity: 1;
+}
+/* line 89, ../sass/styles.scss */
+.carousel-wrapper img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 760px) {
+  /* line 95, ../sass/styles.scss */
+  .carousel-wrapper {
+    width: 100%;
+  }
+}
+
+#event
+{
+	margin-left: 15%;
+}
+
+.eventtxt h2 
+{
+	margin-left: 10px;
+}
+
+.eventtxt p
+{
+	margin-left: 10px; 
+	margin-right: 10px;
+	text-align: justify;
+}

@@ -1,0 +1,346 @@
+body
+{
+	margin: 0 !important;
+	font-family: 'Roboto', sans-serif
+}
+
+#content
+{
+	height: 1000px;
+}
+
+#nav, #navbarleft
+{
+	float: left;
+}
+
+#nav
+{
+	color: #e8f1f2;
+	background-color: #006494;
+	height: 40px;
+	padding: 8 0 8 0;
+	width: 100%;
+	margin-bottom: 50px;
+	position: relative;
+	z-index: 100;
+}
+
+#navbarleft
+{
+	font-size: 24px;
+	margin-right: 50px;
+	padding-left: 25px;
+	height: 40px;
+}
+
+#nazwa
+{
+	margin: 0;
+	padding: 6.5 0 6.5 0;
+	font-weight: bold;
+	color: #e8f1f2;
+}
+
+ol
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -8px;
+}
+
+ol > li
+{
+	display: inline-block;
+	padding: 16 20 16 20;
+	height: 24px;
+	cursor: pointer;
+}
+
+ol > li:hover
+{
+	background-color: #247ba0;
+}
+
+ol > li a
+{
+	text-decoration: none;
+	color: #e8f1f2;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.5;
+	display: block;
+}
+
+ol > li > ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-left: -20;
+	position: absolute;
+	display: none;
+	z-index: 100000;
+}
+
+ol > li:hover > ul
+{
+	display: block;
+}
+
+ol > li > ul > li 
+{
+	padding: 8 24 8 24; 
+	background-color: #247ba0;
+	min-width: 160px;
+}
+
+ol > li > ul > li:hover
+{
+	background-color: #1b98e0;
+}
+
+ol > li > ul > li:first-child
+{
+	margin-top: 16px;
+}
+
+ol > li > ul > li:last-child
+{
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+ol > li > ul > li a
+{
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+#newssection
+{
+	width: 100%;
+	background-color: #006494;
+}
+
+.news
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	color: #fff;
+}
+
+.new
+{
+	background-color: #13293d;
+	padding-left: 1.25%;
+	padding-right: 1.25%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: justify;
+	margin-top: 40px;
+	border-radius: 5px;
+	text-align: center;
+	width: 97.5%;
+}
+
+.newtxt
+{
+	display: inline-block;
+	width: 95%;
+	font-size: 17px;
+}
+
+.newtxt h2
+{
+	font-size: 28px;
+	color: #e8f1f2;
+	font-weight: 700;
+}
+
+.newtxt p
+{
+	text-align: justify;
+}
+
+.tytul, .data
+{
+	float: left;
+}
+
+.tytul
+{
+	width: 70%;
+	text-align: left;
+}
+
+.data
+{
+	width: 30%;
+	text-align: right;
+}
+
+#klasysection
+{
+	background-image: url("../images/background.jpg");
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	height: 500px;
+	width: 100%;
+}
+
+#klasy
+{
+	width: 60%;
+	height: 60%;
+	background-color: rgba(255, 255, 255, 0.7);
+	position: relative;
+	top: 20%;
+	left: 20%;
+	right: 20%;
+	bottom: 20%;
+	padding-bottom: 6px;
+	padding-top: 6px;
+}
+
+#klasyheader
+{
+	height: 37px;
+	padding-top: 15.55px;
+	padding-bottom: 7.55px;
+}
+
+#klasyheader h2 
+{
+	margin: 0;
+	font-size: 32px;
+	text-align: center;
+}
+
+
+table
+{
+	width: 100%;
+	height: 80%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+tr
+{
+	height: 26.6%;
+}
+
+td
+{
+	width: 11.25%;
+	text-align: center;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+.animated td
+{
+	transition: color 0.2s ease-in-out;
+}
+
+.animated td:hover
+{
+	background-color:  #006494;
+	color: #e8f1f2;
+	border-radius: 5px;
+	transition: background-color 0.2s ease-in-out;	
+}
+
+#footersection
+{
+	width: 100%;
+	height: 350px;
+	background-color: #006494;
+}
+
+#footer
+{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+}
+
+#map
+{
+	width: 60%;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	float: left;
+}
+
+#map h2
+{
+	margin: 0;
+	color: #e8f1f2;
+	text-align: center;
+}
+
+#contact
+{
+	width: 38%;
+	margin-left: 2%;
+	float: left;
+	color: #e8f1f2;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+#contact h2
+{
+	margin: 0;
+	color: #e8f1f2;
+	text-align: center;
+}
+
+#contact a 
+{
+	text-decoration: none;
+	color: #e8f1f2;
+}
+
+#contact p 
+{
+	font-size: 20px;
+	padding-top: 8.5px;
+	padding-bottom: 8.5px;
+	margin: 0;
+}
+
+#copyright
+{
+	height: 50px;
+	width: 100%;
+	clear: both;
+}
+
+#copyright p 
+{
+	font-size: 20px;
+	color: #e8f1f2;
+	text-align: center;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 17px;
+}
